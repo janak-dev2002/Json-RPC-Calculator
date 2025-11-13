@@ -163,7 +163,7 @@ public class CalculatorClient {
                 double num1 = Double.parseDouble(num1Str);
                 double num2 = Double.parseDouble(num2Str);
                 
-                System.out.println(DIM + CYAN + "▸ Processing quantum calculation..." + RESET);
+                System.out.println(DIM + CYAN + "▸ Processing JSON-RPC calculation..." + RESET);
                 performCalculation(operation, num1, num2);
                 calculationCount++;
             } catch (NumberFormatException e) {
@@ -245,7 +245,7 @@ public class CalculatorClient {
         System.out.println(BRIGHT_MAGENTA + "╚══════════════════════════════════════════════╝" + RESET);
         System.out.println();
         System.out.println(GREEN + "● Total Calculations: " + BRIGHT_GREEN + calculations + RESET);
-        System.out.println(CYAN + "● " + RESET + DIM + "Thank you for using Quantum Calculator" + RESET);
+        System.out.println(CYAN + "● " + RESET + DIM + "Thank you for using JSON-RPC Powered Calculator" + RESET);
         System.out.println();
         System.out.println(YELLOW + "✨ Until next time, explorer! ✨" + RESET);
         System.out.println();
@@ -270,7 +270,7 @@ public class CalculatorClient {
                     .build();
 
             // Display the request being sent
-            System.out.println(DIM + CYAN + "▸ Sending JSON-RPC request..." + RESET);
+            System.out.println(DIM + CYAN + "▸ Sending request..." + RESET);
             System.out.println(MAGENTA + "  └─ " + RESET + DIM + requestBody.toString() + RESET);
 
             HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());

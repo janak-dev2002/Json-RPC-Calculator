@@ -21,9 +21,12 @@ def divide(a, b):
         return Error(-32000, "Division by zero")
     return Success(a / b)
 
-def application(request):
-    response = dispatch(request.get_data().decode())
-    return Response(response, mimetype="application/json")
+def application(environ, start_response):
+    request = Request(environ)
+    print(f"Received request: {request.get_data().decode()}")
+    response_data = dispatch(request.get_data().decode())
+    response = Response(response_data, mimetype="application/json")
+    return response(environ, start_response)
 
 if __name__ == "__main__":
     run_simple("localhost", 5000, application)
