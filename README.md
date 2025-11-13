@@ -4,20 +4,24 @@ A comprehensive demonstration of JSON-RPC 2.0 protocol implementation featuring 
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [What is JSON-RPC?](#what-is-json-rpc)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Overview](#-overview)
+- [What is JSON-RPC?](#-what-is-json-rpc)
+- [Features](#-features)
+- [Project Structure](#-project-structure)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Usage](#-usage)
   - [Python Server](#python-server)
   - [Java Server](#java-server)
   - [Java Client](#java-client)
-- [API Documentation](#api-documentation)
-- [Examples](#examples)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
+- [API Documentation](#-api-documentation)
+- [Examples](#-examples)
+- [Technologies Used](#-technologies-used)
+- [Switching Between Servers](#-switching-between-servers)
+- [Client Features Highlights](#-client-features-highlights)
+- [License](#-license)
+- [Contributing](#-contributing)
+- [Acknowledgments](#-acknowledgments)
 
 ---
 
@@ -284,7 +288,7 @@ mvn exec:java -Dexec.mainClass="CalculatorClient"
 ```
 ▸ Initializing connection to server...
 ╔══════════════════════════════════════════════╗
-║  ⚡ JSON-RPC POWERED CALCULATOR INTERFACE v2.0    ║
+║ ⚡ JSON-RPC POWERED CALCULATOR INTERFACE v2.0 ║
 ╚══════════════════════════════════════════════╝
 
 ● System Status: ONLINE
@@ -481,14 +485,6 @@ The client provides helpful hints for common issues:
 
 ---
 
-## 🧪 Testing
-
-Both servers include test files in their respective directories:
-- `python-server/test_*.py` - Python server tests
-- Test the client by running it in interactive mode and trying all operations
-
----
-
 ## 📝 License
 
 This is a demo project for educational purposes.
@@ -509,6 +505,6 @@ Contributions, issues, and feature requests are welcome!
 
 ---
 
-**Made with ❤️ for learning JSON-RPC**
+**Made with DevJ for learning JSON-RPC**
 
 *Last updated: November 2025*
