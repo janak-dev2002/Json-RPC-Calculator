@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/python-server/test_client.py">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/python-server/test_client.py" />
+              <option name="updatedContent" value="import requests&#10;import json&#10;&#10;url = &quot;http://localhost:5000&quot;&#10;payload = {&#10;    &quot;jsonrpc&quot;: &quot;2.0&quot;,&#10;    &quot;method&quot;: &quot;add&quot;,&#10;    &quot;params&quot;: [5, 3],&#10;    &quot;id&quot;: 1&#10;}&#10;&#10;try:&#10;    response = requests.post(url, json=payload, headers={&quot;Content-Type&quot;: &quot;application/json&quot;})&#10;    print(f&quot;Status Code: {response.status_code}&quot;)&#10;    print(f&quot;Response Text: {response.text}&quot;)&#10;    print(f&quot;Response JSON: {response.json()}&quot;)&#10;except Exception as e:&#10;    print(f&quot;Error: {e}&quot;)&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
